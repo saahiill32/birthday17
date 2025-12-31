@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>For My Madam Jihh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Main Styles -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Lottie -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+
+<body>
+
+  <!-- 🔓 AUDIO UNLOCK OVERLAY -->
+  <div id="audio-unlock">
+    <p>Tap anywhere to begin</p>
+  </div>
+
+  <!-- 🌄 BACKGROUND SLIDESHOW -->
+  <div id="background">
+    <div class="bg-slide" id="bg1"></div>
+    <div class="bg-slide" id="bg2"></div>
+    <div class="bg-slide" id="bg3"></div>
+    <!-- SVG mask for luma fade (used in Phase 2) -->
+    <svg id="luma-mask-svg" width="0" height="0">
+      <defs>
+        <mask id="lumaMask">
+          <rect width="100%" height="100%" fill="white" />
+        </mask>
+      </defs>
+    </svg>
+  </div>
+
+  <!-- ⏳ COUNTDOWN SECTION -->
+  <section id="countdown-section">
+    <h1 id="countdown-title">
+      Time Remaining For My Madam Jihh Birthday
+    </h1>
+
+    <div id="countdown-boxes">
+      <div class="time-box">
+        <span id="hours">00</span>
+        <label>Hours</label>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <label>Minutes</label>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <label>Seconds</label>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🎈 BALLOONS -->
+  <div id="balloons-container"></div>
+
+  <!-- 🎆 CRACKERS -->
+  <div id="crackers-container"></div>
+
+  <!-- 🎉 BIRTHDAY TEXTS -->
+  <section id="birthday-section" class="hidden">
+    <h1 id="birthday-main">Happy Birthday Bachha</h1>
+
+    <p id="birthday-line-1">
+      Shyd ha tuza 4th birthday aahe jevha pasun aapn sobt aaho
+    </p>
+
+    <p id="birthday-line-2">
+      aani mi promise krto ki aaj pasun tuzya har b'day sobt midun mnvu
+    </p>
+
+    <p id="birthday-love" class="hidden">
+      I LOVE UHH SO MUCH..
+    </p>
+  </section>
+
+  <!-- 💌 LOVE LETTER -->
+  <section id="letter-section" class="hidden">
+    <div id="letter-overlay"></div>
+
+    <div id="letter-wrapper">
+      <img
+        src="assets/images/letter-template.jpg"
+        alt="Love Letter"
+        id="letter-template"
+      />
+
+      <div id="letter-text-container">
+        <!-- Letter text injected line-by-line via JS -->
+      </div>
+    </div>
+
+    <p id="tap-forward">Tap to move forward</p>
+  </section>
+
+  <!-- ❓ YES / ALWAYS -->
+  <section id="question-section" class="hidden">
+    <h2 id="question-text">
+      Kay tu mazya sobt hmesha sathi rahshil ?
+    </h2>
+
+    <div id="answer-buttons">
+      <button class="answer-btn">Yes</button>
+      <button class="answer-btn">Always</button>
+    </div>
+
+    <p id="answer-result" class="hidden">
+      Rahach lagel tula
+    </p>
+  </section>
+
+  <!-- 🎙️ VOICE NOTE -->
+  <section id="voice-section" class="hidden">
+    <p id="voice-trigger">
+      Tap to play for voice note
+    </p>
+  </section>
+
+  <!-- 🎵 AUDIO ELEMENTS -->
+  <audio id="song01" src="assets/audio/song01.mp3" preload="auto"></audio>
+  <audio id="song02" src="assets/audio/song02.mp3" preload="auto"></audio>
+  <audio id="song03" src="assets/audio/song03.mp3" preload="auto"></audio>
+  <audio id="voiceNote" src="assets/audio/voicenote01.mp3" preload="auto"></audio>
+
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
